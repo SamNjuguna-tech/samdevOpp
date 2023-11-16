@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>rating</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<style type="text/css">
+	.rating-system{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+
+
+	}
+	.stars-container{
+ 		background-color: aquamarine;
+ 		align-self: center;
+ 		margin-top: 5rem;
+ 		border-radius: 5px;
+	}
+	.stars-container >*{
+		padding: 10px;
+		font-size: 12px;
+	}
+	.stars-container >*:hover{
+		/*background-color: white;*/
+		color: yellow;
+	}
+	#file{
+		/*display: none;*/
+	}
+
+</style>
+<body>
+<div class="rating-system">
+	<div class="stars-container">
+		<i class="fa-solid fa-star " id="1"></i>
+		<i class="fa-solid fa-star " id="2"></i>
+		<i class="fa-solid fa-star " id="3"></i>
+		<i class="fa-solid fa-star " id="4"></i>
+		<i class="fa-solid fa-star " id="5"></i>
+	</div>
+	<progress id="file" value="100" max="100"> </progress>
+
+</div>
+<script type="text/javascript" src="./ratingSystem.js"></script>
+</body>
+</html>
